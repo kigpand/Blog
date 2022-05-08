@@ -1,6 +1,9 @@
-const Posting = () => {
+import { IPosting } from '../../model/IPosting';
+import './Posting.scss';
+
+const Posting = (data: IPosting) => {
     return (
-        <div></div>
+        <div className='posting'>{data.data.title}</div>
     )
 }
 

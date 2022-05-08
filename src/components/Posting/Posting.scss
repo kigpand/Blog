@@ -1,0 +1,8 @@
+@import '../../styles/utill.scss';
+
+.posting {
+    @include bg-color;
+    width: 70%;
+    height: 300px;
+    border-radius: 40px;
+}
