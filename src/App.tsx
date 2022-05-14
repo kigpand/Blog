@@ -1,15 +1,20 @@
 import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.scss';
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
-import PostingList from './components/PostingList/PostingList';
+import Home from './page/Home';
+import Login from './page/Login';
+import View from './page/View';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <PostingList />
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />}></Route>
+          <Route path='/login' element={<Login />}></Route>
+          <Route path='/view' element={<View />}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

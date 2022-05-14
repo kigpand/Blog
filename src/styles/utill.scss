@@ -9,3 +9,9 @@
     background-color: skyblue;
     margin-right: 1.5rem;
 }
+
+@mixin base {
+    width: 100vw;
+    height: 100vh;
+    background-color: bisque;
+}

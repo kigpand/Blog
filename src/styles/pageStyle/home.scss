@@ -1,0 +1,7 @@
+@import '../utill.scss';
+
+.home {
+    @include base;
+    width: 100%;
+    height: 100%;
+}
