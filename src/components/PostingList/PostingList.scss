@@ -6,4 +6,8 @@
     align-items: center;
     overflow: hidden;
     flex-wrap: nowrap;
+    
+    &:hover {
+        cursor: pointer;
+    }
 }

@@ -14,7 +14,7 @@ const PostingList = () => {
     return(
         <div className='postingList'>
             { dummyData.map((data, i) => {
-                return <Posting data={data} key={i}/>
+                return <Posting data={data} key={i} />
             })}
         </div>
     )
