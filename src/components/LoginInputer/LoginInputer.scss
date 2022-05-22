@@ -1,0 +1,18 @@
+.loginInputer {
+    display: flex;
+    flex-direction: column;
+
+    .idInputer,
+    .pwInputer {
+        width: 300px;
+        height: 40px;
+        border-radius: 8px;
+        border: 1px solid lightgray;
+        outline: none;
+    }
+
+    .wrong {
+        font-size: 0.8rem;
+        color: red;
+    }
+}

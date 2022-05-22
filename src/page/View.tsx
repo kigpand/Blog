@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { IPosting } from '../model/IPosting';
 import '../styles/pageStyle/view.scss';
