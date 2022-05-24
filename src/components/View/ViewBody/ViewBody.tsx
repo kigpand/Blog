@@ -1,14 +1,14 @@
 import { useSelector } from 'react-redux';
 import { IPosting } from '../../../model/IPosting';
-import './ViewHeader.scss';
+import './ViewBody.scss';
 
-const ViewHeader = () => {
+const ViewBody = () => {
 
     const post: IPosting = useSelector((state: any) => state.post);
 
     return(
-        <div className='viewHeader'>{post.title}</div>
+        <div className="viewBody">{post.content}</div>
     )
 }
 
-export default ViewHeader;
+export default ViewBody;

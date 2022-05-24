@@ -1,10 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { IPosting } from './../model/IPosting';
 
-const initialState: IPosting = {
+const initialState = {
     data: { 
         title: "",
-        content: ""
+        content: "",
+        hash: [],
+        date: new Date()
     }
 };
 

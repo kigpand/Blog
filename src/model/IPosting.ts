@@ -1,7 +1,10 @@
 type ID = string | number;
 
 export interface IPosting {
-    data: { title: string, content: string}
+    title: string,
+    content: string,
+    hashTag: string[],
+    date: Date,
 };
 
 export interface IComment {
