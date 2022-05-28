@@ -1,8 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { IPosting } from './../model/IPosting';
 
 const initialState = {
-    data: { 
+    post: { 
         title: "",
         content: "",
         hash: [],
@@ -14,8 +13,8 @@ export const postSlice = createSlice({
     name: 'posting',
     initialState,
     reducers: {
-        getPosting: (state, action) => {
-            state.data = action.payload.data;
+        changeRecentPost: (state, action) => {
+            state.post = {...action.payload};
         },
         deletePosting: (state) => {
 
@@ -23,6 +22,6 @@ export const postSlice = createSlice({
     }
 });
 
-export const { getPosting, deletePosting } = postSlice.actions;
+export const { changeRecentPost, deletePosting } = postSlice.actions;
 
 export default postSlice.reducer;

@@ -13,7 +13,7 @@ const PostingList = () => {
     return(
         <div className='postingList'>
             { dummyData.map((data: IPosting, i) => {
-                return <Posting title={data.title} content={data.content} hashTag={data.hashTag} date={data.date}/>
+                return <Posting title={data.title} content={data.content} hashTag={data.hashTag} date={data.date} key={i} />
             })}
         </div>
     )

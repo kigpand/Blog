@@ -1,0 +1,23 @@
+.viewHeader {
+    width: 100%;
+
+    .title {
+        color: gray;
+        font-size: 3rem;
+    }
+
+    .time {
+        font-weight: bold;
+    }
+
+    .hash {
+        margin: 1rem 0;
+        .hashItem {
+            margin-right: 10px;
+            padding: 2px 10px;
+            border-radius: 20px;
+            background-color: rgba(98, 255, 145, 0.4);
+            color: rgb(31, 221, 31);
+        }
+    }
+}

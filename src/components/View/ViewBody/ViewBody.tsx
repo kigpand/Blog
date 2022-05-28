@@ -4,7 +4,7 @@ import './ViewBody.scss';
 
 const ViewBody = () => {
 
-    const post: IPosting = useSelector((state: any) => state.post);
+    const post: IPosting = useSelector((state: any) => state.post.post);
 
     return(
         <div className="viewBody">{post.content}</div>
