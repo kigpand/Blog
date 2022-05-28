@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { IPosting } from '../../model/IPosting';
 import { changeRecentPost } from '../../reducer/post';
-import './Posting.scss';
+import styles from './Posting.module.scss';
 
 const Posting = ({ title, content, hashTag, date } : IPosting) => {
 
@@ -15,7 +15,7 @@ const Posting = ({ title, content, hashTag, date } : IPosting) => {
     }
 
     return (
-        <div className='posting' onClick={onClick}>{title}</div>
+        <div className={styles.posting} onClick={onClick}>{title}</div>
     )
 }
 

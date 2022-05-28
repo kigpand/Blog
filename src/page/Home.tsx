@@ -1,9 +1,9 @@
 import PostingList from '../components/PostingList/PostingList';
-import '../styles/pageStyle/home.scss';
+import styles from '../styles/pageStyle/home.module.scss';
 
 const Home = () => {
     return(
-        <div className='home'>
+        <div className={styles.home}>
             <PostingList />
         </div>
     )

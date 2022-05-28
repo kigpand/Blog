@@ -1,11 +1,11 @@
 import ViewBody from '../components/View/ViewBody/ViewBody';
 import ViewHeader from '../components/View/ViewHeader/ViewHeader';
-import '../styles/pageStyle/view.scss';
+import styles from '../styles/pageStyle/view.module.scss';
 
 const View = () => {
 
     return(
-        <div className="view">
+        <div className={styles.view}>
             <ViewHeader />
             <ViewBody />
         </div>

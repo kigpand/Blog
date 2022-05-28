@@ -1,6 +1,6 @@
 import { IPosting } from '../../model/IPosting';
 import Posting from '../Posting/Posting';
-import './PostingList.scss';
+import styles from './PostingList.module.scss';
 
 const PostingList = () => {
 
@@ -11,7 +11,7 @@ const PostingList = () => {
     ];
 
     return(
-        <div className='postingList'>
+        <div className={styles.postingList}>
             { dummyData.map((data: IPosting, i) => {
                 return <Posting title={data.title} content={data.content} hashTag={data.hashTag} date={data.date} key={i} />
             })}

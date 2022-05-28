@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './App.scss';
+import styles from './App.module.scss';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Home from './page/Home';
@@ -9,7 +9,7 @@ import View from './page/View';
 
 function App() {
   return (
-    <div className="App">
+    <div className={styles.App}>
       <BrowserRouter>
         <Header />
         <Routes>

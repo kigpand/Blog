@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './LoginInputer.scss';
+import styles from './LoginInputer.module.scss';
 
 const LoginInputer = () => {
 
@@ -38,10 +38,10 @@ const LoginInputer = () => {
     }
 
     return(
-        <div className="loginInputer">
-            <input type='text' className="idInputer" placeholder='아이디를 입력하세요' onKeyDown={onCorrectId}></input>
-            { isCorrectId && <input type='password' className='pwInputer' placeholder='비밀번호를 입력하세요' onKeyDown={onCorrectPw}></input>}
-            { isUnCorrectLogin && <div className='wrong'>입력된 정보가 잘못되었습니다.</div>}
+        <div className={styles.loginInputer}>
+            <input type='text' className={styles.idInputer} placeholder='아이디를 입력하세요' onKeyDown={onCorrectId}></input>
+            { isCorrectId && <input type='password' className={styles.pwInputer} placeholder='비밀번호를 입력하세요' onKeyDown={onCorrectPw}></input>}
+            { isUnCorrectLogin && <div className={styles.wrong}>입력된 정보가 잘못되었습니다.</div>}
         </div>
     )
 }
