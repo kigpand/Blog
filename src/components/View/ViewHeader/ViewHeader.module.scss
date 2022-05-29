@@ -18,6 +18,10 @@
             border-radius: 20px;
             background-color: rgba(98, 255, 145, 0.4);
             color: rgb(31, 221, 31);
+
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 }

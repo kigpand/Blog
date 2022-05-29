@@ -24,7 +24,9 @@
 
         .git,
         .notion,
-        .login {
+        .login,
+        .addPost,
+        .logout {
             @include header-button;
         }
     }

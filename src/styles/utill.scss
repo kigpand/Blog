@@ -8,6 +8,10 @@
     border-radius: 20px;
     background-color: skyblue;
     margin-right: 1.5rem;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 @mixin base {

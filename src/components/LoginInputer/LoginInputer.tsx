@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { setLogin } from '../../reducer/user';
 import styles from './LoginInputer.module.scss';
 
 const LoginInputer = () => {
 
+    const dispatch = useDispatch();
     const [isCorrectId, setIsCorrectId] = useState<Boolean>(false);
     const [isUnCorrectLogin, setIsUnCorrectLogin] = useState<Boolean>(false);
 
@@ -31,7 +34,8 @@ const LoginInputer = () => {
         if (e.code === 'Enter') {
             if (e.currentTarget.value === 'lagisin0225') {
                 nav('/');
-            } 
+                dispatch(setLogin(true));
+            }
             setIsUnCorrectLogin(true);
             return false;
         }

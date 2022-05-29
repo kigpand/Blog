@@ -3,10 +3,12 @@ import persistReducer from 'redux-persist/es/persistReducer';
 import storage from 'redux-persist/lib/storage';
 import comments from '../reducer/comments';
 import post from '../reducer/post';
+import user from '../reducer/user';
 
 const reducers = combineReducers({
     post: post,
-    comments: comments
+    comments: comments,
+    user: user
 });
 
 const persistConfig = {
