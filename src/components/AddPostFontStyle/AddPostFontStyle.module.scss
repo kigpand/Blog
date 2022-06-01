@@ -1,0 +1,20 @@
+.addPostFontStyle {
+    font-size: 2rem;
+    color: gray;
+    display: flex;
+    
+    .bold {
+        margin: 0 1rem;
+        font-weight: bold;
+    }
+
+    .italic {
+        margin: 0 1rem;
+        font-style: italic;
+    }
+
+    .line {
+        margin: 0 1rem;
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,33 @@
+.addPostMain {
+    margin-top: 3rem;
+    width: 50%;
+
+    .title {
+        width: 100%;
+        font-size: 2rem;
+        font-weight: bold;
+        color: gray;
+        outline: none;
+        border: none;
+    }
+
+    .line {
+        margin: 20px 0;
+        width: 50%;
+        height: 2px;
+        background-color: lightgray;
+    }
+
+    .tagInputer {
+        border: none;
+        outline: none;
+        font-size: 1rem;
+    }
+
+    .tagContainer {
+        margin-top: 1rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

@@ -1,8 +1,12 @@
+import AddPostMain from '../components/AddPostMain/AddPostMain';
 import styles from '../styles/pageStyle/addPost.module.scss';
 
 const AddPost = () => {
+
     return(
-        <div className={styles.addPost}>포스팅</div>
+        <div className={styles.addPost}>
+            <AddPostMain />
+        </div>
     )
 }
 

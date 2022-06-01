@@ -1,0 +1,13 @@
+.addPostSelectItem {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+    .line {
+        width: 2px;
+        height: 50%;
+        background-color: lightgray;
+        margin: 0 1rem;
+    }
+} 

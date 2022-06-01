@@ -1,0 +1,20 @@
+.addPostSize {
+    display: flex;
+    height: 100%;
+
+    .btn {
+        width: 50px;
+        height: 100%;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        background-color: rgba(145, 145, 145, 0.3);
+        margin-right: 5px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
