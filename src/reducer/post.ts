@@ -1,12 +1,21 @@
+import { IPosting } from './../model/IPosting';
 import { createSlice } from '@reduxjs/toolkit';
 
-const initialState = {
+interface IPostReducer {
+    post: IPosting,
+    searchItem: string | null,
+    searchList: IPosting[] | []
+}
+
+const initialState: IPostReducer = {
     post: { 
         title: "",
         content: "",
-        hash: [],
+        hashTag: [],
         date: new Date()
-    }
+    },
+    searchItem: null,
+    searchList: []
 };
 
 export const postSlice = createSlice({
@@ -16,12 +25,15 @@ export const postSlice = createSlice({
         changeRecentPost: (state, action) => {
             state.post = {...action.payload};
         },
-        deletePosting: (state) => {
-
+        changeSearchItem: (state, action) => {
+            state.searchItem = action.payload;
         },
+        makeSearchList: (state, action) => {
+            state.searchList = [...action.payload];
+        }
     }
 });
 
-export const { changeRecentPost, deletePosting } = postSlice.actions;
+export const { changeRecentPost, changeSearchItem, makeSearchList } = postSlice.actions;
 
 export default postSlice.reducer;
