@@ -1,3 +1,5 @@
+@import '../../styles/utill.scss';
+
 .addPostMain {
     margin-top: 3rem;
     width: 50%;
@@ -9,6 +11,7 @@
         color: gray;
         outline: none;
         border: none;
+        @include base;
     }
 
     .line {
@@ -22,6 +25,7 @@
         border: none;
         outline: none;
         font-size: 1rem;
+        @include base;
     }
 
     .tagContainer {
